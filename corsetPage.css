@@ -1,0 +1,208 @@
+body
+{
+    background: linear-gradient(white,rgb(187, 187, 187));
+    background-image:url(Billy.png);
+    height: 785px;
+}
+.rubl {
+    font-family: 'PT Sans', serif;
+    }  
+.GreyText
+{
+    
+    margin:0px 200px; /*Установка позиции текста*/
+    text-align: center;/*-----------*/
+    font-size: 15px;/*Установка шрифта текста*/
+    color: rgb(155, 155, 155);/*Установка цвета текста*/
+    font-family: 'PT Sans', serif;
+}
+.GradBlock1
+{
+    position: relative;/*Установка позиции блока на экране\его связь*/
+    height: 550px;
+    width: 480px;
+    margin: 50px 430px;
+    border-radius: 30px;
+    position: center;
+    background:linear-gradient(rgb(219, 219, 219),rgb(131, 131, 131));
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.49);
+    
+}
+.GradBlock2
+{
+    position:absolute;
+    margin: 170px 40px;
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+    position: center;
+    background:linear-gradient(rgb(219, 219, 219),rgb(248, 248, 248));
+    /*box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.49);*/
+}
+.line
+{
+    height: 2px;
+    width: 480px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.49);
+    margin-top: 100px;
+    position: absolute;/*Установка позиции блока на экране\его связь*/
+    background-color:grey;
+}
+.line1
+{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+    position: absolute;/*Установка позиции блока на экране\его связь*/
+    font-family: 'PT Sans', serif;
+}
+.line2
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 28px;
+    position: absolute;/*Установка позиции блока на экране\его связь*/
+    font-family: 'PT Sans', serif;
+}
+.line3
+{
+    margin-top: 130px;
+    margin-left: 50px;
+    font-size: 20px;
+    position: absolute;
+    font-family: 'PT Sans', serif;
+    text-shadow:0px 2px 15px rgba(0, 0, 0, 0.49);
+}
+.line4
+{
+    margin: 20px 20px;
+    font-size: 14px;
+    position: absolute;/*Установка позиции блока на экране\его связь*/
+    font-family: 'PT Sans', serif;
+}
+.line5
+{
+    margin: 100px 20px;
+    font-size: 14px;
+    position: absolute;/*Установка позиции блока на экране\его связь*/
+    font-family: 'PT Sans', serif;
+}
+.line6
+{
+    margin: 170px 20px;
+    font-size: 14px;
+    position: absolute;/*Установка позиции блока на экране\его связь*/
+    font-family: 'PT Sans', serif;
+}
+
+.line8
+{
+    margin: 270px 150px;
+    margin-right: 0px;
+    font-size: 14px;
+    position: absolute;/*Установка позиции блока на экране\его связь*/
+    font-family: 'PT Sans', serif;
+}
+.a1{
+    margin: 290px 150px;
+    margin-right: 0px;
+    position: absolute;}
+.a2{
+    margin: 490px 70px;
+    margin-right: 0px;
+    position: absolute;
+}
+.container
+{
+    position: absolute;
+    width: 480px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.btn
+{
+    height: 35px;
+    width: 100px;
+    border-radius:30px;
+    border:0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.49);
+    margin-top: 120px;
+    opacity: .3;
+    transition: height 0.4s, width 0.4s ;
+
+}
+
+.backgr1
+{   margin-top: 270px;
+    margin-left: 20px;
+    background-color:rgb(92, 92, 92);
+    opacity: 1;
+}
+.btn:hover
+{   height: 40px;
+    width: 105px;
+    opacity: 1;
+}
+.backgr1:active
+{
+    opacity: 1;
+    height: 35px;
+    width: 100px;
+}
+.btn:active
+{
+    height: 35px;
+    width: 100px;
+}
+input
+{
+    position: absolute;
+    border:0px;
+    border-radius:10px;
+    height: 10px;
+    width: 160px;
+    transition: height 0.4s ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.185);
+}
+input::placeholder
+{
+    opacity: .7;
+    
+}
+input[type=text]
+{
+    padding: 10px;
+}
+
+.In1
+{  
+    margin: 50px 20px;
+}
+.In2
+{  
+    width: 70px;
+    margin: 130px 20px;
+}
+.In3
+{  
+    width: 70px;
+    margin: 130px 120px;
+}
+.In4
+{  
+    width: 100px;
+    margin: 200px 20px;
+}
+
+
+input:focus
+{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.555);
+    height: 15px;
+    
+}
+label
+{
+    text-align: right; 
+}

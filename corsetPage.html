@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="corsetPage.css" rel="stylesheet">
+    <link href="icon.ico" rel="icon">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+    
+    <title>Страница оплаты</title>
+</head>
+<body>
+    <div>
+        <h1 id="content" class="GreyText">Наш сервис BillieCo также разрабатывает другой способ оплаты.
+            C FistingAss вы сможете погрузиться в первоклAССyую систему, дающую гарантию качества и быстроты работы.</h1>
+            <div class="GradBlock1">
+                    <div class="line"></div>
+                    <p class="line1">site.com</p>
+                    <p class="line2">27.000 <span class="rubl">&#8399</span></p>
+                    <p class="line3">Информация о карте</p>
+                    <div class="GradBlock2">
+                        
+                        <p class="line4">Номер карты <span style="color:red">*</span></p>
+                        
+                        <input class="In1" type="text" id="cardcode" placeholder="XXXX XXXX XXXX XXXX" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}">
+                        <script>
+                            for (var i in ['input', 'change', 'blur', 'keyup']) {
+                                cardcode.addEventListener('input', formatCardCode, false);
+                            }
+                            function formatCardCode() {
+                                var cardCode = this.value.replace(/[^\d]/g, '').substring(0,16);
+                                cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
+                                this.value = cardCode;
+                                myform.number.value=this.value.split(" ").join("");
+                            }
+                        </script>
+                        
+                        <p class="line5">Действительна до <span style="color:red">*</span></p>
+                        <input type="text" placeholder="Месяц" class="In2"  id="Month">
+                        <script>
+                            for (var i in ['input', 'change', 'blur', 'keyup']) {
+                                Month.addEventListener('input', formatMonth, false);
+                            }
+                            function formatMonth() {
+                                var MonthCode = this.value.replace(/[^\d]/g, '').substring(0,2);
+                                MonthCode = MonthCode != '' ? MonthCode.match(/.{1,4}/g).join(' ') : '';
+                                this.value = MonthCode;
+                                myform.number.value=this.value.split(" ").join("");
+                            }
+                        </script>
+                        <input type="text" placeholder="Год" class="In3" id="Year" >
+                        <script>
+                            for (var i in ['input', 'change', 'blur', 'keyup']) {
+                                Year.addEventListener('input', formatYear, false);
+                            }
+                            function formatYear() {
+                                var YearCode = this.value.replace(/[^\d]/g, '').substring(0,4);
+                                YearCode = YearCode != '' ? YearCode.match(/.{1,4}/g).join(' ') : '';
+                                this.value = YearCode;
+                                myform.number.value=this.value.split(" ").join("");
+                            }
+                        </script>
+                        <p class="line6">Код безопасности <span style="color:red">*</span></p>
+                        <input type="text" placeholder="CVC" class="In4"  id="CVC">
+                        <script>
+                            for (var i in ['input', 'change', 'blur', 'keyup']) {
+                                CVC.addEventListener('input', formatCVC, false);
+                            }
+                            function formatCVC() {
+                                var CVCCode = this.value.replace(/[^\d]/g, '').substring(0,3);
+                                CVCCode = CVCCode != '' ? CVCCode.match(/.{1,4}/g).join(' ') : '';
+                                this.value = CVCCode;
+                                myform.number.value=this.value.split(" ").join("");
+                            }
+                        </script>
+                        <p class="line8">Нажимая на кнопку вы соглашаетесь с</p>
+                        <a class="a1" href="pagecofirm.html" >условием использования сервиса</a>
+                        <button class="btn backgr1" id="Pay" onclick="verif()">Оплатить</button>
+                        
+                    </div>
+                    <a class="a2" href="https://www.youtube.com/watch?v=uG9ucnoIp5Y">Вернуться на сайт</a>
+            </div>
+    </div>
+    <script type="module" src="java.js">
+    </script>
+</body>
+</html>
