@@ -1,6 +1,4 @@
-- 👋 Hi, I’m @NikitkaKoevka
-- 👀 I’m interested in front-end developing
-- 🌱 I’m currently learning programming
+Это моя курсовая работа за 4 семестр посвящённая созданию ИС интернет эквайринга
 
 
 <!---
